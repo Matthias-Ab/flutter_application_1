@@ -365,9 +365,9 @@ class _formsState extends State<forms> {
                       )
                     );
                   },
-                  iconColor: Color.fromARGB(255, 3, 84, 150),
-                  textColor: Color.fromARGB(255, 3, 84, 150),
-                  iconActiveColor: Color.fromARGB(255, 3, 84, 150),
+                  iconColor: const Color.fromARGB(255, 3, 84, 150),
+                  textColor: const Color.fromARGB(255, 3, 84, 150),
+                  iconActiveColor: const Color.fromARGB(255, 3, 84, 150),
                 ),
                  GButton(
                   icon: Icons.format_align_center_sharp,
@@ -377,9 +377,9 @@ class _formsState extends State<forms> {
                       )
                     );
                   },
-                  iconColor: Color.fromARGB(255, 3, 84, 150),
-                  textColor: Color.fromARGB(255, 3, 84, 150),
-                  iconActiveColor: Color.fromARGB(255, 3, 84, 150),
+                  iconColor: const Color.fromARGB(255, 3, 84, 150),
+                  textColor: const Color.fromARGB(255, 3, 84, 150),
+                  iconActiveColor: const Color.fromARGB(255, 3, 84, 150),
                 )
             ]
             ),

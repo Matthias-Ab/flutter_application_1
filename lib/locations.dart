@@ -293,20 +293,7 @@ class _LocationsState extends State<Locations> {
                     
                   ),
 
-                  // OUR APPROVALS
-                  const Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [ 
-                      Text(
-                        "Our Approvals",
-                        style: TextStyle (
-                          color: Color.fromARGB(255, 3, 84, 150),
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        )
-                      )
-                    ],
-                  ),
+                  
 
                   
                   
@@ -349,7 +336,7 @@ class _LocationsState extends State<Locations> {
                   icon: Icons.book,
                   text: "Courses",
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const Locations()
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const upcoming()
                       )
                     );
                   },
@@ -361,7 +348,7 @@ class _LocationsState extends State<Locations> {
                   icon: Icons.location_on,
                   text: "Location",
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const upcoming()
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const Locations()
                       )
                     );
                   },

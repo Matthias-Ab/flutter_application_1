@@ -335,12 +335,12 @@ class _formsState extends State<forms> {
             tabs: [
               GButton(
                 icon: Icons.home,
+                text: "Home",
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage()
                     )
                   );
                 },
-                text: "Home",
                 iconColor: const Color.fromARGB(255, 3, 84, 150),
                   textColor: const Color.fromARGB(255, 3, 84, 150),
                   iconActiveColor: const Color.fromARGB(255, 3, 84, 150),

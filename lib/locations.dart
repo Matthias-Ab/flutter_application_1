@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Locations.dart';
-import 'package:flutter_application_1/upcomingcourses.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:flutter_application_1/forms.dart';
-class HomePage extends StatefulWidget {
-  const HomePage ({Key ? key}) : super(key: key);
+import 'upcomingcourses.dart';
+import 'forms.dart';
+import 'homepage.dart';
+
+class Locations extends StatefulWidget {
+  const Locations ({Key ? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<Locations> createState() => _LocationsState();
 }
 
 
-class _HomePageState extends State<HomePage> {
+class _LocationsState extends State<Locations> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,7 +68,7 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.all(25),
             children:  [
               const Text(
-                "We Provide",
+                "Locations",
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
@@ -348,7 +349,7 @@ class _HomePageState extends State<HomePage> {
                   icon: Icons.book,
                   text: "Courses",
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const upcoming()
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const Locations()
                       )
                     );
                   },
@@ -359,8 +360,10 @@ class _HomePageState extends State<HomePage> {
                  GButton(
                   icon: Icons.location_on,
                   text: "Location",
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const Locations()));
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const upcoming()
+                      )
+                    );
                   },
                   iconColor: Color.fromARGB(255, 3, 84, 150),
                   textColor: Color.fromARGB(255, 3, 84, 150),
@@ -371,7 +374,7 @@ class _HomePageState extends State<HomePage> {
                   text: "Enroll", 
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => const forms()
-                    )
+                      )
                     );
                   },
                   iconColor: Color.fromARGB(255, 3, 84, 150),

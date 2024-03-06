@@ -41,3 +41,22 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Ignore Android specific files and folders
+android/
+
+# Ignore build artifacts
+build/
+
+# Ignore coverage reports (optional)
+coverage/
+
+# Ignore Flutter tool cache (optional)
+.flutter-cache
+
+# Ignore IDE specific files (replace with your IDE name if needed)
+.idea/
+
+# Ignore generated files (replace with specific file extensions based on your project)
+*.yaml.lock
+*.gen.dart

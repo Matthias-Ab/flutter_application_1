@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Locations.dart';
-import 'package:flutter_application_1/upcomingcourses.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:flutter_application_1/forms.dart';
-class HomePage extends StatefulWidget {
-  const HomePage ({Key ? key}) : super(key: key);
+import 'homepage.dart';
+
+class upcoming extends StatefulWidget {
+  const upcoming ({Key ? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<upcoming> createState() => _upcomingState();
 }
 
 
-class _HomePageState extends State<HomePage> {
+class _upcomingState extends State<upcoming> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.all(25),
             children:  [
               const Text(
-                "We Provide",
+                "Upcoming Courses",
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
@@ -359,21 +359,16 @@ class _HomePageState extends State<HomePage> {
                  GButton(
                   icon: Icons.location_on,
                   text: "Location",
-                  onPressed: (){
+                  onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => const Locations()));
                   },
                   iconColor: Color.fromARGB(255, 3, 84, 150),
                   textColor: Color.fromARGB(255, 3, 84, 150),
                   iconActiveColor: Color.fromARGB(255, 3, 84, 150),
                 ),
-                 GButton(
+                const GButton(
                   icon: Icons.format_align_center_sharp,
                   text: "Enroll", 
-                  onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const forms()
-                    )
-                    );
-                  },
                   iconColor: Color.fromARGB(255, 3, 84, 150),
                   textColor: Color.fromARGB(255, 3, 84, 150),
                   iconActiveColor: Color.fromARGB(255, 3, 84, 150),

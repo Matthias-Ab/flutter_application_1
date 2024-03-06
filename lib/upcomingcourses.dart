@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Locations.dart';
+import 'package:flutter_application_1/forms.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'homepage.dart';
 
@@ -366,9 +367,12 @@ class _upcomingState extends State<upcoming> {
                   textColor: Color.fromARGB(255, 3, 84, 150),
                   iconActiveColor: Color.fromARGB(255, 3, 84, 150),
                 ),
-                const GButton(
+                  GButton(
                   icon: Icons.format_align_center_sharp,
                   text: "Enroll", 
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const forms()));
+                  },
                   iconColor: Color.fromARGB(255, 3, 84, 150),
                   textColor: Color.fromARGB(255, 3, 84, 150),
                   iconActiveColor: Color.fromARGB(255, 3, 84, 150),

@@ -77,133 +77,10 @@ class _formsState extends State<forms> {
               const SizedBox(
                 height: 15,
               ),
-              Row(
-                children: [
+              
 
-                    // Training Request
-                  Column(
-                    
-                    children: [
-                      
-                      Container(
-                        
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 228, 19, 158),
-                          borderRadius: BorderRadius.circular(10)
-                        ),
-                        padding: const EdgeInsets.all(38),
-                        height: 100,
-                        width: 100,
-                        child: Image.asset('assets/icons/open-book.png'),
-                        
-                        
-                      ),
-                      const SizedBox(
-                        height: 15,
-                      ),
-                      RichText(
-                        
-                        text: const TextSpan(
-                        text: 'Non Part-145',
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 3, 84, 150),
-                          fontSize: 11,
-                        )
-                      ))
-                    ],
-                  ),
-
-                    
-                    // PART-147 Courses
-
-                Column(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 228, 19, 158),
-                          borderRadius: BorderRadius.circular(10)
-                        ),
-                        padding: const EdgeInsets.all(38),
-                        margin: const EdgeInsets.only(left: 20),
-                        height: 100,
-                        width: 100,
-                        child: Image.asset('assets/icons/book-of-black-cover-closed.png'),
-                      ),
-                      const SizedBox(
-                        height: 15,
-                      ),
-                      RichText(
-                        text: const TextSpan(
-                        text: 'PART-147 Courses',
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 3, 84, 150),
-                          fontSize: 11,
-                        )
-                      ))
-                    ],
-                  ),
-
-                        // PART-145 AVIET Technic
-
-              Column(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 228, 19, 158),
-                          borderRadius: BorderRadius.circular(10)
-                        ),
-                        padding: const EdgeInsets.all(38),
-                        margin: const EdgeInsets.only(left: 20),
-                        height: 100,
-                        width: 100,
-                        child: Image.asset('assets/icons/screwdriver-and-doble-wrench.png'),
-                      ),
-                      const SizedBox(
-                        height: 15,
-                      ),
-                      RichText(
-                        text: const TextSpan(
-                        text: 'PART-145 AVIET Technic',
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 3, 84, 150),
-                          fontSize: 11,
-                          
-                        )
-                      ))
-                    ],
-                  ),
-
-                  
-
-                  
-                ],
-              ),
-                      
-                      // DIVIDER
-              const Divider(
-                    height: 60,
-                  ),
-                
-                    // UPCOMING COURSES
-
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [ 
-                      Text(
-                        "Upcoming Courses",
-                        style: TextStyle (
-                          color: Color.fromARGB(255, 3, 84, 150),
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        )
-                      )
-                    ],
-                  ),
-
-                        // Aribus and Boeing List View
-
-                  const SizedBox(height: 20,),
                   Container(
+                    margin: const EdgeInsets.only(top: 15),
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     height: 65,
                     decoration: BoxDecoration( 
@@ -216,7 +93,7 @@ class _formsState extends State<forms> {
                       const Row(
                         children: [
                           Icon(
-                            Icons.book,
+                            Icons.edit_document,
                             color: Color.fromARGB(255, 3, 84, 150),
                           ),
                         
@@ -225,7 +102,7 @@ class _formsState extends State<forms> {
                         width: 20,
                       ),
                       Text(
-                        'Airbus',
+                        'Part-147 Type Courses',
                         style: TextStyle(
                           fontSize: 16,
                           color: Color.fromARGB(255, 3, 84, 150)
@@ -234,11 +111,94 @@ class _formsState extends State<forms> {
                       ],
                       ),
                       IconButton(
-                        onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => const Locations()
-                            )
-                          );
-                        }, 
+                        onPressed: () {}, 
+                        icon: const Icon(
+                        Icons.arrow_circle_right,
+                        color: Color.fromARGB(255, 3, 84, 150),
+                      )
+                      )
+                    ]),
+
+                    
+                  ),
+
+                 
+                  Container(
+                    margin: const EdgeInsets.only(top: 15),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    height: 65,
+                    decoration: BoxDecoration( 
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(15)
+                    ),
+                    child:  Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [ 
+                      const Row(
+                        children: [
+                          Icon(
+                            Icons.edit_document,
+                            color: Color.fromARGB(255, 3, 84, 150),
+                          ),
+                        
+                      
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        'Non Part-147 Courses',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Color.fromARGB(255, 3, 84, 150)
+                        ),
+                      ),
+                      ],
+                      ),
+                      IconButton(
+                        onPressed: () {}, 
+                        icon: const Icon(
+                        Icons.arrow_circle_right,
+                        color: Color.fromARGB(255, 3, 84, 150),
+                      )
+                      )
+                    ]),
+
+                    
+                  ),
+
+                  Container(
+                    margin: const EdgeInsets.only(top: 15),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    height: 65,
+                    decoration: BoxDecoration( 
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(15)
+                    ),
+                    child:  Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [ 
+                      const Row(
+                        children: [
+                          Icon(
+                            Icons.edit_document,
+                            color: Color.fromARGB(255, 3, 84, 150),
+                          ),
+                        
+                      
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        'Specialized Courses',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Color.fromARGB(255, 3, 84, 150)
+                        ),
+                      ),
+                      ],
+                      ),
+                      IconButton(
+                        onPressed: () {}, 
                         icon: const Icon(
                         Icons.arrow_circle_right,
                         color: Color.fromARGB(255, 3, 84, 150),
@@ -264,7 +224,7 @@ class _formsState extends State<forms> {
                       const Row(
                         children: [
                           Icon(
-                            Icons.book,
+                            Icons.edit_document,
                             color: Color.fromARGB(255, 3, 84, 150),
                           ),
                         
@@ -273,9 +233,9 @@ class _formsState extends State<forms> {
                         width: 20,
                       ),
                       Text(
-                        'Boeing',
+                        'General Familiarization Training',
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 14,
                           color: Color.fromARGB(255, 3, 84, 150)
                         ),
                       ),
@@ -293,23 +253,6 @@ class _formsState extends State<forms> {
                     
                   ),
 
-                  // OUR APPROVALS
-                  const Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [ 
-                      Text(
-                        "Our Approvals",
-                        style: TextStyle (
-                          color: Color.fromARGB(255, 3, 84, 150),
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        )
-                      )
-                    ],
-                  ),
-
-                  
-                  
 
             ],
           ),
